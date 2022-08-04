@@ -1,0 +1,145 @@
+:root{
+    --colorOne:#c0c0c9;
+    --colorTwo:#001362;
+    --colorThree:  #e1efff;
+    --colorFour: #03030b;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--colorThree);
+
+}
+
+
+.container{
+    background-color: var(--colorFour);
+    display: flex;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 100vh;
+    min-width: 900px;
+
+}
+.img {
+    /* background:center / contain no-repeat url('AccessAccount2.jpg') rgb(255, 255, 255); */
+    
+    width: 40vw;
+    position: relative;
+    background-image: url('AccessAccount2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero{
+    
+    position: absolute;
+    font-size: 4;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 20px;
+    text-shadow: 0px 0px 8px #ced0d9;
+    /* background-color: #1111117c; */
+
+}
+
+.formContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    text-shadow: 0px 0px 8px #ced0d9;
+}
+
+h2{
+     margin-top: 20px;
+}
+
+.form{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 20px;
+    background-color: var(--colorThree);    
+}
+input{
+    width: 45%;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--colorOne);
+    padding: 6px 10px;
+    color: var(--colorFour);
+}
+input:focus-visible{
+    outline: var(--colorOne) auto 1px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--colorOne);
+    opacity: 1; /* Firefox */
+  }
+label{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.error{
+    background-color: rgb(255 230 230);
+    border: 1px solid rgb(255, 70, 70);
+    width: 100%;
+}
+
+.err{
+    position: relative;
+    width: 49%;
+    display: flex;
+    gap: 8px;
+}
+.err::after{
+    content: 'something is wrong!';
+    font-size: 12px;
+    font-weight: 100;
+    color: rgb(247, 68, 68);
+    position: absolute;
+    top: 40px;
+}
+
+button{
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-color: var(--colorFour);
+    color: var(--colorThree);
+    text-shadow: 0px 0px 8px #ced0d9;
+}
+
+button:hover{
+    background-color: #4a41e7;;
+}
+
+a{
+    color: var(--colorOne);
+    cursor: pointer;
+}
+
+.login{
+    padding-left: 20px;
+}
+
+small{
+    position: absolute;
+    bottom: 0px;
+    margin: 0px 0px 15px 20%;
+}
